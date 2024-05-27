@@ -1,10 +1,16 @@
 # Google-Cloud-Vertex-AI-Agent-Builder-Hackathon
 
-organized by [GOOGLE AND DEVPOST](https://googlevertexai.devpost.com/)
+organized by [GOOGLE AND DEVPOST](https://googlevertexai.devpost.com/).
 
 <a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2FAshish-Soni08%2FGoogle-Cloud-Vertex-AI-Agent-Builder-Hackathon">
 <img height="32" alt="Open in IDX" src="https://cdn.idx.dev/btn/open_purple_32.svg">
 </a>
+
+Built a no/low-code conversational AI agent using [Vertex AI Agent Builder](https://cloud.google.com/products/agent-builder?hl=en) that falls into the following category:
+
+  ```markdown
+Lifestyle Bot (improves health/wellness)
+  ```
 
 ## Inspiration
 
