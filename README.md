@@ -57,3 +57,68 @@ python -m ipykernel install --user --name=wellness-ai-agent --display-name="Py3.
 # verify kernel installation
 jupyter kernelspec list
 ```
+
+
+```bash
+# Install the gcloud CLI - https://cloud.google.com/sdk/docs/install#linux
+
+# Determine Linux version
+getconf LONG_BIT
+# Output -> 64, therefore chose Linux 64-bit(Arm)
+
+# Download the Linux archive file
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-478.0.0-linux-arm.tar.gz
+
+# Extract the contents of the file
+tar -xf google-cloud-cli-478.0.0-linux-arm.tar.gz
+
+# Add gcloud CLI to path
+./google-cloud-sdk/install.sh 
+
+# Then open a new terminal so that changes can take effect
+
+# Initialize gcloud CLI
+./google-cloud-sdk/bin/gcloud init
+```
+
+```bash
+# remove the tar file
+ rm -rf google-cloud-cli-478.0.0-linux-arm.tar.gz
+```
+
+```bash
+# Get sample cloud functions - https://cloud.google.com/functions/docs/tutorials/http
+git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+```
+
+````bash
+# Set a default region for functions -> https://cloud.google.com/functions/docs/locations
+gcloud config set functions/region europe-west3
+# Output -> Updated property [functions/region].
+```
+
+
+```bash
+# Deploying the Cloud Function -> https://cloud.google.com/functions/docs/tutorials/http
+gcloud functions deploy python-http-function \
+--gen2 \
+--runtime=python310 \
+--source=. \
+--entry-point=hello_get \ 
+--trigger-http
+--allow-unauthenticated
+
+# Notes: 
+# - source: path to the directory where the .py file exists with the function you want to deploy
+
+# Retrieve your functions's URL -> https://cloud.google.com/functions/docs/calling/http#url
+gcloud functions describe python-http-function \
+--gen2 \
+--region=europe-west3 \
+--format="value(serviceConfig.uri)"
+# Output -> https://europe-west3-gcp-lablab-ai-hackathon.cloudfunctions.net/python-http-function
+
+
+# Delete the Cloud Function
+gcloud functions delete python-http-function --gen2 --region europe-west3 
+```
