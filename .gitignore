@@ -1,7 +1,14 @@
+######################
 # Added by Author - Ashish Soni
 
 # 27.05.2024
 .wellness-ai-agent/
+
+# 29.05.2024
+google-cloud-sdk/
+python-docs-samples/
+agent-tools/.env
+######################
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
