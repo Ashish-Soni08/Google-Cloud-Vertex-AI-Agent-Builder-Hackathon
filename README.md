@@ -2,10 +2,6 @@
 
 organized by [GOOGLE AND DEVPOST](https://googlevertexai.devpost.com/).
 
-<a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2FAshish-Soni08%2FGoogle-Cloud-Vertex-AI-Agent-Builder-Hackathon">
-<img height="32" alt="Open in IDX" src="https://cdn.idx.dev/btn/open_purple_32.svg">
-</a>
-
 Built a no/low-code conversational AI agent using [Vertex AI Agent Builder](https://cloud.google.com/products/agent-builder?hl=en) that falls into the following category:
 
   ```markdown
@@ -29,3 +25,35 @@ The main **goal** of this project is to `provide a support system for an individ
 ## Accomplishments that we're proud of
 
 ## What we learned
+
+## Environment Setup
+
+```bash
+python -V
+# Output -> Python 3.10.13
+```
+
+```bash
+# create a environment named -> .wellness-ai-agent
+python -m venv .wellness-ai-agent
+```
+
+```bash
+# activate the environment
+source .wellness-ai-agent/bin/activate
+```
+
+```bash
+# Install packages to create a Jupyter Notebook kernel
+pip install jupyter ipykernel
+```
+
+```bash
+# add your virtual environment as a kernel
+python -m ipykernel install --user --name=wellness-ai-agent --display-name="Py3.10-wellness-ai-agent"
+```
+
+```bash
+# verify kernel installation
+jupyter kernelspec list
+```
