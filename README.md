@@ -1,12 +1,10 @@
-# Google-Cloud-Vertex-AI-Agent-Builder-Hackathon
+# Gemini-API-Developer-Competition
 
-organized by [GOOGLE AND DEVPOST](https://googlevertexai.devpost.com/).
+organised by [Google](https://ai.google.dev/competition)
 
-Built a no/low-code conversational AI agent using [Vertex AI Agent Builder](https://cloud.google.com/products/agent-builder?hl=en) that falls into the following category:
-
-  ```markdown
+```markdown
 Lifestyle Bot (improves health/wellness)
-  ```
+```
 
 ## Inspiration
 
@@ -17,6 +15,13 @@ The main **goal** of this project is to `provide a support system for an individ
 **Generative AI** has ushered in a new era for chatbots, providing them with capabilities to engage users in more natural conversations. **Generative AI** models also known as **LLMs(Large Language Models)** have given us the opportunity to offer more personalized and foster more engaging interactions. But deploying these **LLMs** in consumer applications poses several challenges, including the need to add guardrails that prevent the model from generating undesirable responses. For example, `in the context of building an AI for mental health, then you don't want it to generate toxic answers that bring more mental distress or teach people to engage in behaviors harmful to oneself.`
 
 ## What it does
+
+```markown
+Mental Wellness Companion
+
+This bot fosters emotional well-being by generating personalized affirmations, guided meditations, and mindfulness exercises based on the user's mood and current needs. 
+
+```
 
 ## How we built it
 
