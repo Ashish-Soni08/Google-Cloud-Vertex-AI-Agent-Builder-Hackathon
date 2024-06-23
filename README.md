@@ -1,6 +1,6 @@
-# Gemini-API-Developer-Competition
+# Mistral AI Fine-tuning Hackathon
 
-organised by [Google](https://ai.google.dev/competition)
+organised by [Mistral AI](https://mistral.ai/news/2024-ft-hackathon/)
 
 ```markdown
 Lifestyle Bot (improves health/wellness)
