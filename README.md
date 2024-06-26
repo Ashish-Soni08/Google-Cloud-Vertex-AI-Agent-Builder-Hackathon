@@ -1,6 +1,4 @@
-# Mistral AI Fine-tuning Hackathon
-
-organised by [Mistral AI](https://mistral.ai/news/2024-ft-hackathon/)
+# Sophia - A Mental Wellness Companion
 
 ```markdown
 Lifestyle Bot (improves health/wellness)
